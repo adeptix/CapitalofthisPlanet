@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Столицы этой планеты</string>
+    <string name="app_name">Capitals of this planet</string>
 
-    <string name="start">Начать</string>
-    <string name="pause">Пауза</string>
-    <string name="big_game">Большая Игра</string>
-    <string name="oc">Океания</string>
-    <string name="af">Африка</string>
-    <string name="am">Две Америки</string>
-    <string name="eu">Европа</string>
-    <string name="as">Азия</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="big_game">The Great Game</string>
 
-    <string name="saved">Продолжить сохраннённую игру или начать новую?</string>
-     <string name="save0">Продолжить</string>
-     <string name="save1">Новую</string>
+
+    <string name="saved">Continue a saved game or start a new one?</string>
+    <string name="save0">Continue</string>
+    <string name="save1">New Game</string>
 
 </resources>

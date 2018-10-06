@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+     <com.rad.capital.SpinnerPreference
+         android:key="set_lang"
+         android:title="@string/lang"
+     />
+
+
+     <com.rad.capital.SeekBarPreference
+         android:key="set_music"
+         android:title="@string/music"
+     />
+     <com.rad.capital.SeekBarPreference
+         android:key="set_sound"
+         android:title="@string/sound"
+     />
+
+     <SwitchPreference
+         android:key="SWITCH"
+         android:title="Animations"
+     />
+
+
+
+
+
+
+</android.support.v7.preference.PreferenceScreen>

@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class StartActivity extends Activity {
@@ -14,6 +15,9 @@ public class StartActivity extends Activity {
     Saver saver;
 
     AlertDialog.Builder cont;
+
+
+    public static String TAG = "ADEPT";
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -65,7 +69,7 @@ public class StartActivity extends Activity {
         switch (v.getId()) {
 
             case R.id.game:
-
+                long time = System.currentTimeMillis();
                 intent.removeExtra("isSave");
 
                 if(saver.getInt("g") != -1) cont.show();
@@ -73,12 +77,14 @@ public class StartActivity extends Activity {
                   init.restart();
                   startActivity(intent);
                 }
-
+                Log.i(TAG, "timeGame -- " + (System.currentTimeMillis() - time));
             break;
 
 
             case R.id.set:
-            //  startActivity(new Intent(this, SettingActivity.class));
+                long time2 = System.currentTimeMillis();
+                startActivity(new Intent(this, SettingsActivity.class));
+                Log.i(TAG, "time -- " + (System.currentTimeMillis() - time2));
             break;
 
             case R.id.achiv:

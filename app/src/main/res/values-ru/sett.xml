@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang">Язык</string>
+    <string name="lang_def">ru</string>
+
+    <string name="music">Музыка</string>
+    <string name="sound">Звук</string>
+
+</resources>
